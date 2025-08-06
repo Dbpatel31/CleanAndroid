@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextStyle_Intermedium20">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle_Intermedium15">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle_Interregular14">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextStyle_Interbold15">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle_Interbold30">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

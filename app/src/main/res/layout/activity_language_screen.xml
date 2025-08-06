@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Define variables here if needed later -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appbackground"
+        android:padding="16dp"
+        tools:context=".ui.language.LanguageScreenActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Language"
+            android:textAppearance="@style/TextStyle_Intermedium20"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintBottom_toTopOf="@id/btnSelect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_border_background"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/languageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp" />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textAppearance="@style/TextStyle_Interbold15"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
